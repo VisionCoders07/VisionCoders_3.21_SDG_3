@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEROpulse Dashboard</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>AEROpulse Dashboard</header>
+  <!-- <header class="main-header">
+  <div class="logo">
+     <span>AEROpulse</span>
+  </div>
+  <nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Health Insights</a>
+    <a href="#">Urban Planning</a>
+    <a href="#">Profile</a>
+  </nav>
+</header>
+ -->
+
+  <div id="dashboard">
+    <!-- Left Panel -->
+    <div>
+      <div class="info-card">
+        <div class="search-container">
+          <input type="text" id="locationSearch" placeholder="Search location...">
+          <button id="searchBtn">Search</button>
+        </div>
+        <button id="detectBtn" style="width:100%; margin-top:0.5rem;">Detect Near Me</button>
+      </div>
+      
+      <div class="info-card">
+        <h3>Air Quality Info</h3>
+        <p id="aqi">AQI: --</p>
+        <p id="pm25">PM2.5: --</p>
+        <p id="pm10">PM10: --</p>
+        <p id="no2">NO2: --</p>
+        <p id="o3">O3: --</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Respiratory Health</h3>
+        <p id="asthma">Asthma Cases: --</p>
+        <p id="copd">COPD Cases: --</p>
+        <p id="bronchitis">Bronchitis Cases: --</p>
+      </div>
+
+      <div class="info-card slider-container">
+        <h3>Scenario Simulation</h3>
+        <label>Reduce Traffic (%)</label>
+        <input type="range" min="0" max="50" value="0" id="trafficSlider">
+        <label>Increase Green Zones (%)</label>
+        <input type="range" min="0" max="50" value="0" id="greenSlider">
+      </div>
+    </div>
+
+    <!-- Center Map -->
+    <div>
+      <div id="map"></div>
+    </div>
+
+    <!-- Right Panel -->
+    <div>
+      <div class="info-card">
+        <h3>Forecast (7 Days)</h3>
+        <canvas id="forecastChart" width="200" height="200"></canvas>
+      </div>
+      <div class="info-card">
+        <h3>Pollutant Trend</h3>
+        <canvas id="trendChart" width="200" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+  <!-- Custom JS -->
+  
+  <footer class="main-footer">
+  <p>© 2026 AEROpulse · Air Quality & Respiratory Intelligence Platform</p>
+  <p>Built for Smart Cities & Urban Planners</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

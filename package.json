@@ -1,20 +1,7 @@
 {
-  "name": "visioncoders_3.21_sdg_3",
-  "version": "1.0.0",
-  "description": "AeroPulse is a heat-map dashboard that visualizes air quality and its impact on respiratory diseases, with an API built for urban planners and public health teams.",
-  "homepage": "https://github.com/VisionCoders07/VisionCoders_3.21_SDG_3#readme",
-  "bugs": {
-    "url": "https://github.com/VisionCoders07/VisionCoders_3.21_SDG_3/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VisionCoders07/VisionCoders_3.21_SDG_3.git"
-  },
-  "license": "ISC",
-  "author": "Team VisionCoders",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5"
   }
 }
