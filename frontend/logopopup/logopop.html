@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Company</title>
+  <link rel="stylesheet" href="logopop.css" />
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div class="overlay"></div>
+
+    <div class="splash-content">
+      <img src="image/logo.png" alt="Company Logo" class="logo" />
+      <h1 class="company-name">AEROPULSE</h1>
+      <p class="tagline">Innovating the Future</p>
+      <p class="hint">Press any key to continue</p>
+    </div>
+  </div>
+
+  <!-- Login Screen -->
+  <div id="login-screen">
+    <div class="login-box">
+      <h2>Member Login</h2>
+
+      <input type="text" placeholder="Enter Username" />
+      <input type="password" placeholder="Enter Password" />
+
+      <button class="login-btn">Login</button>
+      <button class="skip-btn">Skip</button>
+    </div>
+  </div>
+
+  <!-- Permission Popup -->
+    <div id="permission-popup">
+        <div class="permission-box">
+            <h2>Allow Location Access?</h2>
+            <p>We use your location to personalize your experience.</p>
+            <div class="permission-buttons">
+                <button id="allow-btn">Allow</button>
+                <button id="deny-btn">Deny</button>
+            </div>
+        </div>
+    </div>
+
+
+  <script src="logopop.js"></script>
+</body>
+</html>
